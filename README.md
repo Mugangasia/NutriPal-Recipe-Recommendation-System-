@@ -1,5 +1,8 @@
 # NutriPal-Recipe-Recommendation-System-
 
+![image](https://github.com/Mugangasia/NutriPal-Recipe-Recommendation-System-/assets/98708792/d75237c8-1ffd-4bf6-bc20-c6057b2cc590)
+
+
 # Project Overview 
 In the rapidly growing health and wellness industry, individuals are increasingly seeking practical solutions to make informed dietary choices and improve their overall well-being. However, navigating the vast array of diet plans, meal delivery services, and health apps can be overwhelming. Stakeholders in this industry face the critical challenge of providing personalized and accurate nutrition recommendations that meet individual's unique needs and preferences.
 
