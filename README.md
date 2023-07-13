@@ -53,7 +53,7 @@ This project will include 3 datasets
 
 * *Kenyan Local Food Recipes*
 
-Recipes data set was obtained from here . It contains a list of ```231636``` rows of recipes and ```12``` columns.
+Recipes data set was obtained from [here](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions) . It contains a list of ```231636``` rows of recipes and ```12``` columns.
 
 * name - Recipe name
 * id - Recipe ID
@@ -68,7 +68,7 @@ Recipes data set was obtained from here . It contains a list of ```231636``` row
 * ingredients - List of ingredient names
 * n_ingredients - Number of ingredients
   
-The nutrition dataset was obtained from here.
+The nutrition dataset was obtained from [here](https://www.kaggle.com/datasets/trolukovich/nutritional-values-for-common-foods-and-products).
 
 This dataset contains information on approximately ```8.8``` thousand types of food. The dataset includes various features related to the nutrition value of each food item per ```100gram``` serving. There are ```75``` features in total, you can find features like ```calories, vitamin_d, zink, protein, lactose.``` As you can see features names are very self-explanatory, so a description is not provided.
 
