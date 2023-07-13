@@ -72,7 +72,7 @@ The nutrition dataset was obtained from here.
 
 This dataset contains information on approximately ```8.8``` thousand types of food. The dataset includes various features related to the nutrition value of each food item per ```100gram``` serving. There are ```75``` features in total, you can find features like ```calories, vitamin_d, zink, protein, lactose.``` As you can see features names are very self-explanatory, so a description is not provided.
 
-The Kenyan Dataset was ontained from here[(https://cookpad.com)]
+The Kenyan Dataset was ontained from [here](https://cookpad.com)
 The dataset contains information about recipes, including their ```names```, ```cooking time (in minutes)```, ```ingredients```, ```steps```, ```serving size```, and ```nutritional information.```
 There are ```218``` entries (recipes) in the dataset.
 
