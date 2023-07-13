@@ -1,6 +1,5 @@
 # NutriPal-Recipe-Recommendation-System-
-# Capstone Project at Moringa School Phase 5 
-NutriPal Recipe Recommendation System
+
 # Project Overview 
 In the rapidly growing health and wellness industry, individuals are increasingly seeking practical solutions to make informed dietary choices and improve their overall well-being. However, navigating the vast array of diet plans, meal delivery services, and health apps can be overwhelming. Stakeholders in this industry face the critical challenge of providing personalized and accurate nutrition recommendations that meet individual's unique needs and preferences.
 
@@ -79,3 +78,35 @@ There are ```218``` entries (recipes) in the dataset.
 The ```'Serving'``` column represents the serving size of each recipe.
 The ```'calories',``` ```'total fat (PDV)'```, ```'sugar (PDV)'```, ```'sodium (PDV)'```, ```'protein (PDV)'```, ```'saturated fat (PDV)'```, and ```'carbohydrates (PDV)'``` columns  provide nutritional information for each recipe, expressed as a percentage of the re
 *recommended daily value (PDV).
+
+# EVALUATION
+
+In summary, the evaluation of the recommendation model involves assessing its performance, user satisfaction, coverage, efficiency, and conducting A/B testing. The evaluation process aims to provide insights into the accuracy, effectiveness, and overall impact of the recommendation system.
+
+The evaluation metrics such as RMSE and MAE provide quantitative measures of the model's accuracy by comparing the predicted ratings or preferences with the actual ones. These metrics help assess the model's ability to make accurate recommendations.
+
+User testing and feedback play a crucial role in evaluating the user satisfaction with the recommended recipes. Gathering user feedback can provide valuable insights into the relevance, quality, and appeal of the recommendations. This qualitative evaluation helps identify strengths and weaknesses of the recommendation system from the user's perspective.
+
+Coverage evaluation measures the proportion of recipes for which the model can provide recommendations. A higher coverage indicates a more comprehensive and diverse set of recommendations, ensuring that users have a wide range of options to choose from.
+
+Efficiency evaluation considers the computational resources and time required for generating recommendations. The model's efficiency is assessed based on its ability to handle a large number of users and recipes efficiently, delivering recommendations in a timely manner.
+
+# CONCLUSION
+
+In conclusion, the project involved building a recommendation system for recipe suggestions based on user-specific calorie requirements. Three different algorithms were evaluated: KNN Basic, KNN Means, and SVD. Hyperparameter tuning was performed to optimize the performance of these algorithms. The results indicated that the SVD algorithm outperformed both the KNN Basic and KNN Means algorithms in terms of accuracy. This algorithm provided the most accurate and reliable recipe recommendations for the dataset.
+
+The implemented recommendation system offers a diverse range of healthy recipes, catering to users' specific calorie needs. The system considers factors such as dietary preferences, cooking skills, and ingredient availability to provide personalized recommendations that align with individual requirements.
+
+# RECOMMENDATIONS
+
+To enhance the user experience and promote healthy eating habits, we suggest incorporating the following features into the recommendation system:
+
+* ```User Profile:``` Allow users to create profiles and input their specific dietary preferences, restrictions, and goals. This information can be used to further personalize the recipe recommendations.
+
+* ```Meal Planning:``` Integrate a meal planning feature that suggests a balanced set of recipes for each day or week, considering the user's calorie requirements and dietary preferences. This feature can help users plan their meals in advance and maintain a healthy eating routine.
+
+* ```Recipe Filtering:``` Provide options to filter recipes based on specific dietary needs, such as vegetarian, vegan, gluten-free, or low-carb. This allows users to find recipes that align with their specific dietary preferences and restrictions.
+
+* ```Nutritional Information:``` Include detailed nutritional information for each recipe, including calories, macronutrients (protein, fat, carbohydrates), and key vitamins or minerals. This information can help users make informed decisions about the nutritional content of the recipes they choose.
+
+* ```User Feedback and Ratings:``` Implement a user feedback system where users can rate and provide feedback on the recipes they try. This feedback can be used to improve the recommendation system and provide more accurate and relevant suggestions in the future.
