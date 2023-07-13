@@ -43,8 +43,8 @@ Develop a Food/Recipe Recommendation System that suggests nutritious food to ind
 Our recommender system will be considered successful if it meets the following criteria:
 
 * Have a recall score of ```80%``` and above.
-* Have a mean absolute precission at least ```90%.```
-* Have a coverage of around 90%.This means that the model is able to recommend a wide variety of nutritious foods and recipes to users
+* Have a mean absolute precision at least ```90%.```
+* Have a coverage of around 90%. This means that the model is able to recommend a wide variety of nutritious foods and recipes to users
 
 # Data Understanding
 This project will include ```3``` datasets
@@ -55,15 +55,15 @@ This project will include ```3``` datasets
 
 * *Kenyan Local Food Recipes*
 
-Recipes data set was obtained from [here](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions) . It contains a list of ```231636``` rows of recipes and ```12``` columns.
+The recipes data set was obtained from [here](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions) . It contains a list of ```231636``` rows of recipes and ```12``` columns.
 
 * name - Recipe name
 * id - Recipe ID
-* minutes - Minutes to prepare recipe
+* minutes - Minutes to prepare the recipe
 * contributor_id - User ID who submitted this recipe
 * submitted - Date recipe was submitted
 * tags - Food.com tags for recipe
-* nutrition - Nutrition information (calories (#), total fat (PDV), sugar (PDV) ,sodium (PDV) , protein (PDV) , saturated fat (PDV) , and carbohydrates (PDV))
+* Nutrition - Nutrition information (calories (#), total fat (PDV), sugar (PDV) , sodium (PDV) , protein (PDV) , saturated fat (PDV) , and carbohydrates (PDV))
 * n_steps - Number of steps in recipe
 * steps - Text for recipe steps, in order
 * description - User-provided description
