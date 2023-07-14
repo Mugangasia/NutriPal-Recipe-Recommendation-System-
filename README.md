@@ -88,6 +88,7 @@ KNN Model: The K-Nearest Neighbors (KNN) algorithm was implemented to provide re
 SVD Model: The Singular Value Decomposition (SVD) algorithm was employed for collaborative filtering to recommend recipes. SVD decomposed the user-item rating matrix to identify latent features and patterns. The model's performance was evaluated using cross-validation, considering RMSE and MAE metrics. The SVD algorithm achieved reasonable performance with relatively lower RMSE and MAE values.
 Hyperparameter Tuning: A grid search was performed to identify the optimal values of hyperparameters for the KNNBasic, KNNWithMeans, and SVD models. The grid search helped fine-tune the models and improve their performance by identifying the best hyperparameter combinations.
 Prediction Testing: The final trained models, KNNWithMeans and SVD, were tested on new data. The models were capable of making predictions and providing recommendations based on user preferences, such as calorie intake and recipe similarities.
+![image](https://github.com/Mugangasia/NutriPal-Recipe-Recommendation-System-/assets/98708792/c52b6b6f-1cad-48bd-a9f6-5bd828886d38)
 
 
 # EVALUATION
