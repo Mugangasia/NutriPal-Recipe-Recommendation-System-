@@ -18,6 +18,7 @@ st.sidebar.image(logo_image, use_column_width=True)
 st.sidebar.text("Eat the Best Leave the Rest")
 
 
+
 # Load the recipe data
 df = pd.read_csv('Kenyan_recipe.csv')
 
