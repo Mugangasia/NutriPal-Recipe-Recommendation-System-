@@ -82,6 +82,9 @@ The ```'Serving'``` column represents the serving size of each recipe.
 The ```'calories',``` ```'total fat (PDV)'```, ```'sugar (PDV)'```, ```'sodium (PDV)'```, ```'protein (PDV)'```, ```'saturated fat (PDV)'```, and ```'carbohydrates (PDV)'``` columns  provide nutritional information for each recipe, expressed as a percentage of the re
 *recommended daily value (PDV).
 
+# MODELING
+
+
 # EVALUATION
 
 Everluation metrics RSME and MAE were used to everBased on the evaluation metrics, the KNNWithMeans model performed better compared to the KNNBasic and SVD models. Here are the metrics for each model:
