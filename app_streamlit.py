@@ -2,6 +2,21 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from PIL import Image
+
+# Load the logo image
+logo_image = Image.open('D:\\NutriPal-Recipe-Recommendation-System-\\image\\Wok Asian Food Logo.png')
+
+# Load the logo image
+logo_image = Image.open(r'D:\NutriPal-Recipe-Recommendation-System-\image\Wok Asian Food Logo.png')
+
+
+# Insert the logo in the app
+st.sidebar.image(logo_image, use_column_width=True)
+
+# Add footer text
+st.sidebar.text("Eat the Best Leave the Rest")
+
 
 # Load the recipe data
 df = pd.read_csv('Kenyan_recipe.csv')
