@@ -3,6 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
 # Load the recipe data
 df = pd.read_csv('Kenyan_recipe.csv')
 
