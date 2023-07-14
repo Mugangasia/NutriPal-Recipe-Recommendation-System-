@@ -84,15 +84,26 @@ The ```'calories',``` ```'total fat (PDV)'```, ```'sugar (PDV)'```, ```'sodium (
 
 # EVALUATION
 
-In summary, the evaluation of the recommendation model involves assessing its performance, user satisfaction, coverage, efficiency, and conducting A/B testing. The evaluation process aims to provide insights into the accuracy, effectiveness, and overall impact of the recommendation system.
+Everluation metrics RSME and MAE were used to everBased on the evaluation metrics, the KNNWithMeans model performed better compared to the KNNBasic and SVD models. Here are the metrics for each model:
 
-The evaluation metrics such as RMSE and MAE provide quantitative measures of the model's accuracy by comparing the predicted ratings or preferences with the actual ones. These metrics help assess the model's ability to make accurate recommendations.
+```KNNBasic:```
 
-User testing and feedback play a crucial role in evaluating the user satisfaction with the recommended recipes. Gathering user feedback can provide valuable insights into the relevance, quality, and appeal of the recommendations. This qualitative evaluation helps identify strengths and weaknesses of the recommendation system from the user's perspective.
+* RMSE: 4697.2541
+* MAE: 143.7001
 
-Coverage evaluation measures the proportion of recipes for which the model can provide recommendations. A higher coverage indicates a more comprehensive and diverse set of recommendations, ensuring that users have a wide range of options to choose from.
+```KNNWithMeans:```
 
-Efficiency evaluation considers the computational resources and time required for generating recommendations. The model's efficiency is assessed based on its ability to handle a large number of users and recipes efficiently, delivering recommendations in a timely manner.
+* RMSE: 4652.632
+* MAE: 143.7001
+
+```SVD:```
+
+* RMSE: 4018.6941
+* MAE: 143.7001
+
+Among these models, the ```SVD``` model achieved the lowest ```RMSE``` value of ```4018.6941,``` indicating better accuracy in predicting the ratings. However, for MAE, all three models have the same value of ```143.7001.```
+
+Therefore, if we prioritize ```RMSE``` as the evaluation metric, the SVD model performed the best. However, if MAE is the main consideration, all three models have the same performance.luate the performance of the three models.
 
 # CONCLUSION
 
