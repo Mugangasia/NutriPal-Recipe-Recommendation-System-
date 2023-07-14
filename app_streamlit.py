@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 # Load the recipe data
 df = pd.read_csv('Kenyan_recipe.csv')
@@ -19,10 +20,10 @@ def recommend_recipes_by_calories(df, target_calories, num_recipes=3):
 
 def main():
     # Set the page title
-    st.title('Recipe Recommendation System')
+    st.title('Nutripal Recipe Recommendation System')
 
     # Add a sidebar section
-    st.sidebar.title('User Input')
+    st.sidebar.title('Get your Recipes!')
 
     # Get user input for target calories
     target_calories = st.sidebar.number_input('Enter Target Calories', min_value=0)
@@ -55,6 +56,23 @@ def main():
                 st.write('- Protein:', row['protein (PDV)'])
                 st.write('- Saturated Fat:', row['saturated fat (PDV)'])
                 st.write('- Carbohydrates:', row['carbohydrates (PDV)'])
+
+                # Display the nutritional information as a bar chart using Seaborn
+                nutrition_data = {
+                    'Nutrient': ['Total Fat', 'Sugar', 'Sodium', 'Protein', 'Saturated Fat', 'Carbohydrates'],
+                    'PDV': [row['total fat (PDV)'], row['sugar (PDV)'], row['sodium (PDV)'],
+                            row['protein (PDV)'], row['saturated fat (PDV)'], row['carbohydrates (PDV)']]
+                }
+
+                nutrition_df = pd.DataFrame(nutrition_data)
+                plt.figure(figsize=(8, 6))
+                sns.barplot(x='Nutrient', y='PDV', data=nutrition_df)
+                plt.xlabel('Nutrient')
+                plt.ylabel('Percentage Daily Value (PDV)')
+                plt.title('Nutritional Information')
+
+                # Display the bar chart using st.pyplot(fig)
+                st.pyplot(plt.gcf())
 
                 st.write('---')
         else:
