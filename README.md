@@ -104,10 +104,9 @@ Collaborative Filtering Model:
 
 The collaborative filtering model did not yield any meaningful results in this case, resulting in all evaluation metrics being 0. 
 
+# DEPLOYMENT
 
 # CONCLUSION
-
-
 
 # RECOMMENDATIONS
 
