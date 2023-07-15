@@ -93,13 +93,15 @@ Content-based filtering, on the other hand, focuses on the attributes or charact
 Content-Based Filtering Model:
 * Precision: 0.2
 * Recall: 0.5
-- Hit Rate: 0.2
+* Hit Rate: 0.2
+
 The content-based filtering model achieved a precision of 0.2, indicating that 20% of the recommended recipes were actually liked by the user. The recall value of 0.5 suggests that all the liked recipes were successfully recommended. The hit rate of 0.2 implies that only 20% of the recommended recipes were liked by the user.
 
 Collaborative Filtering Model:
 * Precision: 0
 * Recall: 0
 * Hit Rate: 0
+
 The collaborative filtering model did not yield any meaningful results in this case, resulting in all evaluation metrics being 0. 
 
 
