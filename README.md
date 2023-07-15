@@ -106,6 +106,8 @@ Collaborative Filtering Model:
 The collaborative filtering model did not yield any meaningful results in this case, resulting in all evaluation metrics being 0. 
 
 # DEPLOYMENT
+We used Streamlite to deploy our model. The model takes in User preferences and Calorie levels to provide recommendations for recipes as shown below. 
+![image](https://github.com/Mugangasia/NutriPal-Recipe-Recommendation-System-/assets/98708792/89c31a29-0e0c-4923-885b-53e2d59c8d5a)
 
 # CONCLUSION
 In conclusion, the recipe recommender system successfully utilized content-based filtering to provide personalized recipe recommendations. By analyzing the nutrition information and calorie levels of food items, the system was able to suggest similar recipes that matched the user's preferences and dietary requirements. The evaluation results highlighted the effectiveness of the content-based filtering approach in terms of precision, recall, and we will use it in our deployment.
