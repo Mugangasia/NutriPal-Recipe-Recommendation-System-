@@ -24,7 +24,7 @@ Time and effort constraints for meal planning: Busy lifestyles can make it diffi
 
 # Objectives
 ### Main objective.
-Develop a Food/Recipe Recommendation System that suggests nutritious food to individuals and promoting a healthy lifestyle.
+Develop a Food/Recipe Recommendation System that suggests nutritious food to individuals and promotes a healthy lifestyle.
 
 ### Specific Objectives.
 * Identify the key features and factors that impact an individual's overall health, and determine which ones should be incorporated into the food recommendation system.
@@ -40,11 +40,11 @@ Develop a Food/Recipe Recommendation System that suggests nutritious food to ind
 * Deploy the food recommendation system and chatbot, and conduct user testing to gather feedback and identify areas for improvement.
 
 # Metrics Of Success
-Our recommender system will be considered successful if it meets the following criteria:
+* Our recommender system will be considered successful if it meets the following criteria:
 
-Have a recall score of 50% and a lower MSE Value.
+* Have a recall score of 50% and a lower MSE Value.
 
-Have coverage of around 90%. This means that the model is able to recommend a wide variety of nutritious foods and recipes to users
+* Have coverage of around 90%. This means that the model is able to recommend a wide variety of nutritious foods and recipes to users
 
 # Data Understanding
 This project will include ```3``` datasets
