@@ -106,7 +106,7 @@ Collaborative Filtering Model:
 The collaborative filtering model did not yield any meaningful results in this case, resulting in all evaluation metrics being 0. 
 
 # DEPLOYMENT
-We used Streamlite to deploy our model. The model takes in User preferences and Calorie levels to provide recommendations for recipes as shown below. 
+We used Streamlite to deploy our model. The model takes in User preferences and Calorie levels to provide recommendations for recipes as shown below. <br>
 ![image](https://github.com/Mugangasia/NutriPal-Recipe-Recommendation-System-/assets/98708792/89c31a29-0e0c-4923-885b-53e2d59c8d5a)
 
 # CONCLUSION
