@@ -90,6 +90,7 @@ Collaborative filtering analyzes user behavior and preferences to recommend item
 Content-based filtering, on the other hand, focuses on the attributes or characteristics of items themselves. Our final model was the content-based filtering approach that involved analyzing the nutrition information and calorie levels of various food items to recommend similar items that meet the user's specific requirements.
 
 # EVALUATION
+The evaluation of the recommender system provided valuable insights into its performance. 
 Content-Based Filtering Model:
 * Precision: 0.2
 * Recall: 0.5
@@ -107,6 +108,7 @@ The collaborative filtering model did not yield any meaningful results in this c
 # DEPLOYMENT
 
 # CONCLUSION
+In conclusion, the recipe recommender system successfully utilized content-based filtering to provide personalized recipe recommendations. By analyzing the nutrition information and calorie levels of food items, the system was able to suggest similar recipes that matched the user's preferences and dietary requirements. The evaluation results highlighted the effectiveness of the content-based filtering approach in terms of precision, recall, and we will use it in our deployment.
 
 # RECOMMENDATIONS
 
