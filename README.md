@@ -83,9 +83,11 @@ The ```' calories',``` ```' total fat (PDV)'```, ```' sugar (PDV)'```, ```' sodi
 *recommended daily value (PDV).
 
 # MODELING
+We used collaborative filtering and Content-based filtering to provide recommendations based on a user's preference. The models utilized datasets containing nutrition information and calories for various food items. The recommender allows users to select a specific food item with calorie levels and provide a list of recommendations that meet the requirements.
 
+Collaborative filtering analyzes user behavior and preferences to recommend items that other similar users have liked. This approach is based on the assumption that users who have similar tastes and preferences in the past will have similar preferences in the future. Collaborative filtering can be helpful in recommending food items based on the choices of users with similar dietary preferences and calorie requirements.
 
-
+Content-based filtering, on the other hand, focuses on the attributes or characteristics of items themselves. Our final model was the content-based filtering approach that involved analyzing the nutrition information and calorie levels of various food items to recommend similar items that meet the user's specific requirements.
 
 # EVALUATION
 
