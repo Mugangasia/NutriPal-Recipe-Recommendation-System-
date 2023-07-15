@@ -4,7 +4,7 @@
 
 
 # Project Overview 
-In the rapidly growing health and wellness industry, individuals are increasingly seeking practical solutions to make informed dietary choices and improve their overall well-being. However, navigating the vast array of diet plans, meal delivery services, and health apps can be overwhelming. Stakeholders in this industry face the critical challenge of providing personalized and accurate nutrition recommendations that meet individual's unique needs and preferences.
+In the rapidly growing health and wellness industry, individuals are increasingly seeking practical solutions to make informed dietary choices and improve their overall well-being. However, navigating the vast array of diet plans, meal delivery services, and health apps can be overwhelming. Stakeholders in this industry face the critical challenge of providing personalized and accurate nutrition recommendations that meet individuals' unique needs and preferences.
 
 A significant problem is the lack of tailored nutrition guidance available in the market. Existing solutions often offer generic diet plans that do not consider individual factors such as age, gender, body composition, dietary restrictions, and cultural preferences. Consequently, individuals may experience frustration and disappointment when these solutions fail to deliver the desired results, leading to a decline in motivation and a higher likelihood of abandoning their healthy eating goals.
 
@@ -39,12 +39,12 @@ Develop a Food/Recipe Recommendation System that suggests nutritious food to ind
 
 * Deploy the food recommendation system and chatbot, and conduct user testing to gather feedback and identify areas for improvement.
 
-# Metrics Of Success.
+# Metrics Of Success
 Our recommender system will be considered successful if it meets the following criteria:
 
-* Have a recall score of ```80%``` and above.
-* Have a mean absolute precision at least ```90%.```
-* Have a coverage of around 90%. This means that the model is able to recommend a wide variety of nutritious foods and recipes to users
+Have a recall score of 80% and a lower MSE Value.
+
+Have coverage of around 90%. This means that the model is able to recommend a wide variety of nutritious foods and recipes to users
 
 # Data Understanding
 This project will include ```3``` datasets
@@ -55,7 +55,7 @@ This project will include ```3``` datasets
 
 * *Kenyan Local Food Recipes*
 
-The recipes data set was obtained from [here](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions) . It contains a list of ```231636``` rows of recipes and ```12``` columns.
+The recipe data set was obtained from [here](https://www.kaggle.com/datasets/shuyangli94/food-com-recipes-and-user-interactions) . It contains a list of ```231636``` rows of recipes and ```12``` columns.
 
 * name - Recipe name
 * id - Recipe ID
@@ -64,7 +64,7 @@ The recipes data set was obtained from [here](https://www.kaggle.com/datasets/sh
 * submitted - Date recipe was submitted
 * tags - Food.com tags for recipe
 * Nutrition - Nutrition information (calories (#), total fat (PDV), sugar (PDV) , sodium (PDV) , protein (PDV) , saturated fat (PDV) , and carbohydrates (PDV))
-* n_steps - Number of steps in recipe
+* n_steps - Number of steps in the recipe
 * steps - Text for recipe steps, in order
 * description - User-provided description
 * ingredients - List of ingredient names
@@ -72,64 +72,39 @@ The recipes data set was obtained from [here](https://www.kaggle.com/datasets/sh
   
 The nutrition dataset was obtained from [here](https://www.kaggle.com/datasets/trolukovich/nutritional-values-for-common-foods-and-products).
 
-This dataset contains information on approximately ```8.8``` thousand types of food. The dataset includes various features related to the nutrition value of each food item per ```100gram``` serving. There are ```75``` features in total, you can find features like ```calories, vitamin_d, zink, protein, lactose.``` As you can see features names are very self-explanatory, so a description is not provided.
+This dataset contains information on approximately ```8.8``` thousand types of food. The dataset includes various features related to the nutrition value of each food item per ```100gram``` serving. There are ```75``` features in total, you can find features like ```calories, vitamin_d, zink, protein, lactose.``` As you can see feature names are very self-explanatory, so a description is not provided.
 
-The Kenyan Dataset was ontained from [here](https://cookpad.com)
+The Kenyan Dataset was obtained from [here](https://cookpad.com)
 The dataset contains information about recipes, including their ```names```, ```cooking time (in minutes)```, ```ingredients```, ```steps```, ```serving size```, and ```nutritional information.```
 There are ```218``` entries (recipes) in the dataset.
 
-The ```'Serving'``` column represents the serving size of each recipe.
-The ```'calories',``` ```'total fat (PDV)'```, ```'sugar (PDV)'```, ```'sodium (PDV)'```, ```'protein (PDV)'```, ```'saturated fat (PDV)'```, and ```'carbohydrates (PDV)'``` columns  provide nutritional information for each recipe, expressed as a percentage of the re
+The ```' Serving'``` column represents the serving size of each recipe.
+The ```' calories',``` ```' total fat (PDV)'```, ```' sugar (PDV)'```, ```' sodium (PDV)'```, ```' protein (PDV)'```, ```' saturated fat (PDV)'```, and ```' carbohydrates (PDV)'``` columns  provide nutritional information for each recipe, expressed as percentages of the re
 *recommended daily value (PDV).
 
 # MODELING
-Baseline Model: A baseline calorie-based recommender was created to provide personalized nutrition recommendations. It utilized a dataset containing nutritional information, including calories, for various food items. The recommender allowed users to specify their target calorie intake and provided a list of food items that met their requirements.
-KNN Model: The K-Nearest Neighbors (KNN) algorithm was implemented to provide recipe recommendations. The model utilized collaborative filtering, comparing the preferences of similar users to recommend recipes. The performance of two variants, KNNBasic, and KNNWithMeans, was evaluated using cross-validation. KNNWithMeans outperformed KNNBasic in terms of accuracy and was selected as the preferred algorithm.
-SVD Model: The Singular Value Decomposition (SVD) algorithm was employed for collaborative filtering to recommend recipes. SVD decomposed the user-item rating matrix to identify latent features and patterns. The model's performance was evaluated using cross-validation, considering RMSE and MAE metrics. The SVD algorithm achieved reasonable performance with relatively lower RMSE and MAE values.
-Hyperparameter Tuning: A grid search was performed to identify the optimal values of hyperparameters for the KNNBasic, KNNWithMeans, and SVD models. The grid search helped fine-tune the models and improve their performance by identifying the best hyperparameter combinations.
-Prediction Testing: The final trained models, KNNWithMeans and SVD, were tested on new data. The models were capable of making predictions and providing recommendations based on user preferences, such as calorie intake and recipe similarities.
-![image](https://github.com/Mugangasia/NutriPal-Recipe-Recommendation-System-/assets/98708792/c52b6b6f-1cad-48bd-a9f6-5bd828886d38)
+
+
 
 
 # EVALUATION
 
-Everluation metrics RSME and MAE were used to everBased on the evaluation metrics, the KNNWithMeans model performed better compared to the KNNBasic and SVD models. Here are the metrics for each model:
 
-```KNNBasic:```
-
-* RMSE: 4697.2541
-* MAE: 143.7001
-
-```KNNWithMeans:```
-
-* RMSE: 4652.632
-* MAE: 143.7001
-
-```SVD:```
-
-* RMSE: 4018.6941
-* MAE: 143.7001
-
-Among these models, the ```SVD``` model achieved the lowest ```RMSE``` value of ```4018.6941,``` indicating better accuracy in predicting the ratings. However, for MAE, all three models have the same value of ```143.7001.```
-
-Therefore, if we prioritize ```RMSE``` as the evaluation metric, the SVD model performed the best. However, if MAE is the main consideration, all three models have the same performance.luate the performance of the three models.
 
 # CONCLUSION
 
-In conclusion, the project involved building a recommendation system for recipe suggestions based on user-specific calorie requirements. Three different algorithms were evaluated: KNN Basic, KNN Means, and SVD. Hyperparameter tuning was performed to optimize the performance of these algorithms. The results indicated that the SVD algorithm outperformed both the KNN Basic and KNN Means algorithms in terms of accuracy. This algorithm provided the most accurate and reliable recipe recommendations for the dataset.
 
-The implemented recommendation system offers a diverse range of healthy recipes, catering to users' specific calorie needs. The system considers factors such as dietary preferences, cooking skills, and ingredient availability to provide personalized recommendations that align with individual requirements.
 
 # RECOMMENDATIONS
 
 To enhance the user experience and promote healthy eating habits, we suggest incorporating the following features into the recommendation system:
 
-* ```User Profile:``` Allow users to create profiles and input their specific dietary preferences, restrictions, and goals. This information can be used to further personalize the recipe recommendations.
+* ``` User Profile:``` Allow users to create profiles and input their specific dietary preferences, restrictions, and goals. This information can be used to further personalize the recipe recommendations.
 
-* ```Meal Planning:``` Integrate a meal planning feature that suggests a balanced set of recipes for each day or week, considering the user's calorie requirements and dietary preferences. This feature can help users plan their meals in advance and maintain a healthy eating routine.
+* ``` Meal Planning:``` Integrate a meal planning feature that suggests a balanced set of recipes for each day or week, considering the user's calorie requirements and dietary preferences. This feature can help users plan their meals in advance and maintain a healthy eating routine.
 
-* ```Recipe Filtering:``` Provide options to filter recipes based on specific dietary needs, such as vegetarian, vegan, gluten-free, or low-carb. This allows users to find recipes that align with their specific dietary preferences and restrictions.
+* ``` Recipe Filtering:``` Provide options to filter recipes based on specific dietary needs, such as vegetarian, vegan, gluten-free, or low-carb. This allows users to find recipes that align with their specific dietary preferences and restrictions.
 
 * ```Nutritional Information:``` Include detailed nutritional information for each recipe, including calories, macronutrients (protein, fat, carbohydrates), and key vitamins or minerals. This information can help users make informed decisions about the nutritional content of the recipes they choose.
 
-* ```User Feedback and Ratings:``` Implement a user feedback system where users can rate and provide feedback on the recipes they try. This feedback can be used to improve the recommendation system and provide more accurate and relevant suggestions in the future.
+* ``` User Feedback and Ratings:``` Implement a user feedback system where users can rate and provide feedback on the recipes they try. This feedback can be used to improve the recommendation system and provide more accurate and relevant suggestions in the future.
