@@ -4,10 +4,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Load the trained model and other necessary data
-model = 'content_user_model.pkl'  # Replace with your trained model
-vectorizer_file = 'tfidf_vectorizer.pkl'  # Replace with your vectorizer file
-kenyan_data_file = 'Kenyan.csv'  # Replace with your Kenyan recipes data file
-foreign_data_file = 'Foreign.csv'  # Replace with your Foreign recipes data file
+model = 'content_user_model.pkl'  
+vectorizer_file = 'tfidf_vectorizer.pkl'  
+kenyan_data_file = 'Kenyan.csv'  
+foreign_data_file = 'Foreign.csv'  
 
 # Load vectorizer from file
 vectorizer = pd.read_pickle(vectorizer_file)
