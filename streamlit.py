@@ -3,21 +3,21 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Load the trained model and other necessary data
+# loading dataset
 model = 'content_user_model.pkl'  
 vectorizer_file = 'tfidf_vectorizer.pkl'  
 kenyan_data_file = 'Kenyan.csv'  
 foreign_data_file = 'Foreign.csv'  
 
-# Load vectorizer from file
+# Vectorizer from file
 vectorizer = pd.read_pickle(vectorizer_file)
 
-# Load Kenyan data
+# Kenyan data
 kenyan_data = pd.read_csv(kenyan_data_file)
 kenyan_data['text'] = kenyan_data['ingredients'] + ' ' + kenyan_data['steps']
 kenyan_features = vectorizer.transform(kenyan_data['text'])
 
-# Load Foreign data (if available)
+# Foreign data (if available)
 if foreign_data_file:
     foreign_data = pd.read_csv(foreign_data_file)
     foreign_data['text'] = foreign_data['ingredients'] + ' ' + foreign_data['steps']
@@ -31,7 +31,7 @@ def main():
     st.title("NutriPal Recipe Recommender")
     st.subheader("Discover your next delicious recipe!")
 
-    # Create user input field
+    # User input field
     user_input = st.text_area("Enter your preferences")
 
     # Create input field for calories
