@@ -41,7 +41,7 @@ Develop a Food/Recipe Recommendation System that suggests nutritious food to ind
 # Metrics Of Success
 * Our recommender system will be considered successful if it meets the following criteria:
 
-* Have a recall score of 50% and a lower MSE Value.
+* Have a recall score of 80% and a lower MSE Value.
 
 * Have coverage of around 90%. This means that the model is able to recommend a wide variety of nutritious foods and recipes to users
 
