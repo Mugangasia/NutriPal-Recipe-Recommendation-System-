@@ -27,17 +27,16 @@ Time and effort constraints for meal planning: Busy lifestyles can make it diffi
 Develop a Food/Recipe Recommendation System that suggests nutritious food to individuals and promotes a healthy lifestyle.
 
 ### Specific Objectives.
-* Identify the key features and factors that impact an individual's overall health, and determine which ones should be incorporated into the food recommendation system.
+* Identify the key features and factors that impact an individual's overall health and determine which ones should be incorporated into the food recommendation system.
 
-* Clean and preprocess the nutrition data available in the dataset, and combine it with external data sources to create a comprehensive nutrition database that can be used by the recommendation system.
+* Clean and preprocess the nutrition data available in the dataset and combine it with external data sources to create a comprehensive nutrition database that can be used by the recommendation system.
 
-* Develop and implement recommendation algorithms that can generate personalized food recommendations based on the user's individual characteristics such as age, gender, degree of physical activity, locally available foods, and dietary customs.
+* Develop and implement recommendation algorithms that can generate personalized food recommendations based on the user's individual characteristics, such as age, gender, degree of physical activity, locally available foods, and dietary customs.
 
-* Create a chatbot that can interact with users and collect relevant information such as dietary preferences, and restrictions, as well as any other relevant information that can be used to personalize food recommendations.
 
 * Integrate the recommendation algorithms and chatbot into a user-friendly and intuitive interface that allows users to easily access and interact with the system.
 
-* Deploy the food recommendation system and chatbot, and conduct user testing to gather feedback and identify areas for improvement.
+* Deploy the food recommendation system and conduct user testing to gather feedback and identify areas for improvement.
 
 # Metrics Of Success
 * Our recommender system will be considered successful if it meets the following criteria:
